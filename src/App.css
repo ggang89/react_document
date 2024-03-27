@@ -1,5 +1,10 @@
-.App {
-  text-align: center;
+
+body{
+  margin:20px;
 }
 
+.avatar{
+  border:5px solid #000;
+  border-radius: 50%;
+}
 
