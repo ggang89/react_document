@@ -8,8 +8,7 @@ export default function Profile({user}) {
   
   
 
-  return (
-    user.imageSize &&(
+  return user.imageSize ?(
     <>
       <h1>{user.name}</h1>
       <img
@@ -23,6 +22,6 @@ export default function Profile({user}) {
         // style={style}
       />
     </>
-  )
-  )
+  
+  ) :null
 }

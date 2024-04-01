@@ -1,10 +1,12 @@
 
 import './App.css';
 import Button from './Button';
-import { b as Button2} from './Button2'
-//export function b라고 해준 경우, as 컴포넌트명으로 import해줘야 함
+import { b as Btn2} from './Button2'
+//export function b라고 해준 경우, default안해주면 {중괄호} 써야함
+//b컴포넌트를 Btn2로 명명할 수 있다
 import Label from './Label';
 import Profile from './Profile';
+import {Product as Pd} from './product';
 
 const user1 = {
   name: "Hedy Lamarr",
@@ -24,10 +26,11 @@ function App() {
     <div>
       <h1>리액트 공식문서 학습하기</h1>
       <Button/>
-      <Button2/>
+      <Btn2/>
       <Label/>
       <Profile user={user1}/>
       <Profile user={user2}/>
+      <Pd />
     </div>
   );
 }
