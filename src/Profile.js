@@ -5,8 +5,11 @@ export default function Profile({user}) {
   //   width: user.imageSize,
   //   height: user.imageSize,
   // };
-  if(user.name)
+  
+  
+
   return (
+    user.imageSize &&(
     <>
       <h1>{user.name}</h1>
       <img
@@ -21,5 +24,5 @@ export default function Profile({user}) {
       />
     </>
   )
-  return 123;
+  )
 }

@@ -14,7 +14,7 @@ const user1 = {
 const user2 = {
   
   imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
-  imageSize: 90,
+  imageSize: 0,//falsy한 값인 0은 그대로 반환된다.false,undefined,null은 표현이 안된다.=>&&작성의 주의점
 };
 
 function App() {
