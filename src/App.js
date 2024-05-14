@@ -8,6 +8,8 @@ import BuyList from './BuyList';
 import Label from './Label';
 import Profile from './Profile';
 import {Product as Pd} from './product';
+import FilterList from './목록렌더링(filter())';
+import List from './목록렌더링(map())';
 
 const user1 = {
   name: "Hedy Lamarr",
@@ -29,6 +31,8 @@ function App() {
   return (
     <div>
       <h1>리액트 공식문서 학습하기</h1>
+      <FilterList/>
+      <List/>
       <Button/>
       <Btn2/>
       <Label/>
